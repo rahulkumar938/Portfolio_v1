@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "TechnicalExpertise";
+    Layout = "~/Views/Shared/_LayoutMin.cshtml";
+}
+
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Name', 'Rating(Out of 10):'],
+          ['C#', 8],
+          ['SQL Server', 8.2],
+          ['ADO.Net', 8],
+          ['Entity Framework', 8.5],
+          ['ASp.Net MVC', 9],
+          ['HTML5', 9],
+          ['CSS3', 8],
+          ['Twitter Bootstrap', 8],
+          ['Javascript', 7]
+        ]);
+
+        var options = {
+            title: 'Technical Expertise',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div id="piechart_3d" style="width: 900px; height: 500px; background-color:#F6F3F2;"></div>
+</body>
+</html>
+
+@*<div>
+    <br><br>
+    <div class="col-sm-offset-2 col-sm-8" style="padding:8px">
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="http://code.highcharts.com/highcharts-3d.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        @using Highsoft.Web.Mvc.Charts
+
+        @(Html.Highsoft().GetHighcharts(
+        new Highcharts
+        {
+            Chart = new Highsoft.Web.Mvc.Charts.Chart
+            {
+                Options3d = new ChartOptions3d
+                {
+                    Enabled = true,
+                    Alpha = 45,
+                    Beta = 0
+                }
+            },
+            Title = new Title
+            {
+                Text = "Technical Expertise"
+            },
+            PlotOptions = new PlotOptions
+            {
+                Pie = new PlotOptionsPie
+                {
+                    InnerSize = "100",
+                    Depth = 45
+                }
+            },
+            Series = new List<Series>
+            {
+                new PieSeries
+                {
+                    Name = "Rating(Out of 10):",
+                    Data = @ViewData["pieData"] as List<PieSeriesData>
+                },
+
+            }
+        }
+        , "chart")
+        )
+    </div>   
+</div>*@
+

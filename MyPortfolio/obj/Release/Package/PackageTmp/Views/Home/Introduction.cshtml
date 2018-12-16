@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewBag.Title = "Introduction";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <style>
+        body {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+
+        #header {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+    </style>
+</head>
+<body>
+    <div class="fullwidth text-left" id="header" style="margin-top:14px;">
+        <header style="padding:4px;">
+            <h3 style="margin-top:10px; font-weight: 900">
+                <strong>About Me:</strong></h3>
+        </header>
+    </div>
+    <div style="position: relative;
+	margin-top: 15px;background-color:#F6F3F2; z-index:1000;">
+
+        <div class="container" style="border: 5px solid #FCFAFA; border-radius: 5px">
+            <p style="background-color: rgb(248, 153, 45);z-index:1000; margin:10px ; padding:5px " class="text-center">
+                <ul>
+                    <li>Seeking a challenging and growth oriented position in an organization where my technical skills are effectively utilized.</li>
+                    <li>I want to work where the ingredients of technology and business combine to create powerful and effective solutions.Graphs & Highcharts.</li>
+                    <li>I am extremely self-motivated and will run with an idea, but I also enjoy working in groups and I am not afraid to raise my hand for help when I hit a stumbling block.</li>
+                    <li>I enjoy working in co-operative environments where I am able to contribute my own ideas and work with people from whom I can learn. </li>
+                </ul>
+            </p>
+            <div class="panel-group" id="accordion" style="margin: 10px ; padding:5px ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                <strong>Key Aptitude</strong></a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li><strong>Technical:</strong> Developing projects with Asp.Net MVC as front-end and SQL Server as backend. Experience in ASP.Net. Proficient in database development. Microsoft Certified in C#, MVC and SQL Server and Azure.</li>
+                                <li><strong>Analysis & Design:</strong>Proven competencies at all phases of SDLC, which includes Requirement, Design, Analysis, Coding, Testing, Implementation and System Support and end-to-end development of software products from requirement analysis to system study, designing, coding, testing, debugging, documentation and implementation. </li>
+                                <li><strong>Interpersonal:</strong>Team player with good communication & interpersonal skills. Willing to learn, share knowledge, develop and adapt to new technologies and ideas. </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <strong>Technical proficiency:</strong></a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><strong>Presentation-tier</strong> 	: Asp.Net Form, MVC, HTML5, JavaScript  </li>
+                                <li><strong>Data-tier</strong>	        : MS SQL Server, DB2, ADO.Net, LINQ, Entity Framework, Web API </li>
+                                <li><strong>Languages</strong>	        : C#, Python, Java </li>
+                                <li><strong>Technologies</strong> 	    : ADO.NET, Microsoft SQL Server 2012 </li>
+                                <li><strong>Tools</strong>              : Microsoft Visual Studio 2015, SQL Server Management Studio </li>
+                                <li><strong>Markup Languages</strong> 	: HTML5, CSS3, JavaScript, JQuery </li>
+                                <li><strong>Operating System </strong>	: Window (7, 8 &10) </li>
+                                <li><strong>Source Control</strong>	    : Git, TFS,JIRA, MS VSO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <strong>Personal Details:</strong></a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li><strong>Date of Birth</strong> 	    : 20th May 1993  </li>
+                                <li><strong>Languages</strong> 	 	    : English, Hindi </li>
+                                <li><strong>Marital status</strong> 	    : Unmarried </li>
+                                <li><strong>Hobbies</strong> 	 	    : Reading, Sudoku, Cricket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function(){
+
+$('.collapse').collapse({
+                    toggle: false
+            });
+
+
+});
+    </script>
+</body>
+</html>
+

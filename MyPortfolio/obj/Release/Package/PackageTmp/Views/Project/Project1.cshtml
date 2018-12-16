@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Project1";
+    Layout = "~/Views/Shared/_LayoutMin.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+        #header {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+    </style>
+     
+</head>
+<body>
+    <!--text-center-->
+    <div class="fullwidth text-left" id="header" style="margin-top:14px;">
+        <header style="padding:4px;">
+            <h3 style="margin-top:10px; font-weight: 900">
+               Project 1:
+            </h3>
+        </header>
+    </div>
+    <div style="position: relative;
+	margin-top: 15px;background-color:#F6F3F2; z-index:1000;">
+
+        <div class="container" style="border: 5px solid #FCFAFA; border-radius: 5px">
+            <p style="background-color: rgb(248, 153, 45);z-index:1000; margin:10px ; padding:5px " class="text-center">
+               <ul>
+                <li>Client	        : Walmart</li>
+		        <li>Title		    : Connexus Integration</li>
+                <li>Role		    : Developer</li>
+                <li>Environment     : C#.Net, WCF & Informix</li>
+                </ul>
+            </p>
+            <div class="panel-group" id="accordion" style="margin: 10px ; padding:5px ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                Project Description:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li> Connexus is a windows application which controls pharmacy related operations in Walmart stores.</li>
+                                <li>The Key task of the project is to enhance the performance by
+                                    <ul>
+                                        <li>Optimizing the code</li>
+                                        <li>Combining service calls</li>
+                                        <li>Making the UI lighter </li>
+                                        <li>Remove unused functionalities</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                Roles and Responsibilities:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Involved in continuous performance and load testing with the enhancements made.</li>
+                                <li>Played a key role in Research and emerging out new ideas by which newer enhancements are made which contributed in improving the performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function(){
+
+$('.collapse').collapse({
+                    toggle: false
+            });
+
+
+});
+    </script>
+</body>
+</html>	
+

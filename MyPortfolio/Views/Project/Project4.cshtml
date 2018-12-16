@@ -1,0 +1,118 @@
+﻿
+@{
+    ViewBag.Title = "Project4";
+    Layout = "~/Views/Shared/_LayoutMin.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+
+        #header {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+    </style>
+
+</head>
+<body>
+    <!--text-center-->
+    <div class="fullwidth text-left" id="header" style="margin-top:14px;">
+        <header style="padding:4px;">
+            <h3 style="margin-top:10px; font-weight: 900">
+                Project 4:
+            </h3>
+        </header>
+    </div>
+    <div style="position: relative;
+	margin-top: 15px;background-color:#F6F3F2; z-index:1000;">
+
+        <div class="container" style="border: 5px solid #FCFAFA; border-radius: 5px">
+            <p style="background-color: rgb(248, 153, 45);z-index:1000; margin:10px ; padding:5px " class="text-center">
+                <ul>
+                    <li>Client	        : Microsoft</li>
+                    <li>Title		    : TMT & XPT</li>
+                    <li>Role		    : Developer</li>
+                    <li>Environment     : C#, Asp.Net webforms, ASP.Net MVC, Web Services, Azure & SQL server</li>
+                </ul>
+            </p>
+            <div class="panel-group" id="accordion" style="margin: 10px ; padding:5px ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                Project Description:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li>XPT abbreviates to  Extended payment Tool. XPT is developed in C# and ASP.Net webfroms. It is developed as two separate websites one for user and other for Administrator. It is a completely configurable web application </li>
+                                <li>
+                                    The Key task of the project is to 
+                                    <ul>
+                                        <li>Configuration of various controls based on specific country</li>
+                                        <li>Dispersment of Loan and calulation of interest based on user inputs </li>
+                                        <li>Generation of final ambendment document based on the set of input values.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>TMT abbreviates to  Transaction Management Tool. TMT is developed in C# and ASP.Net MVC. It is a Wed Application which performs functionalities way greater than XPT. It uses a routing matrix which defines the flow a transaction will flow during course of its life</li>
+                                <li>
+                                    The Key task of the project is to
+                                    <ul>
+                                        <li>Create Various types of request based on customer requirement</li>
+                                        <li>Dispersment of Loan and calulation of interest based on user inputs</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                Roles and Responsibilities:
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Responsible for understanding the business requirements & the technology of the existing developed system</li>
+                                <li>Analysis, Design, Coding, Unit Testing, Integration testing and Implementation for the requirements raised </li>
+                                <li>Deployment into the servers and Azure cloud </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function(){
+
+$('.collapse').collapse({
+                    toggle: false
+            });
+
+
+});
+    </script>
+</body>
+</html>
+

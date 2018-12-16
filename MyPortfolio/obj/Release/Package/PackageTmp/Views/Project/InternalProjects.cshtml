@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "InternalProjects";
+    Layout = "~/Views/Shared/_LayoutMin.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+
+        #header {
+            font-family: 'Calibri';
+            background-color: #F6F3F2;
+        }
+    </style>
+
+</head>
+<body>
+    <!--text-center-->
+    <div class="fullwidth text-left" id="header" style="margin-top:14px;">
+        <header style="padding:4px;">
+            <h3 style="margin-top:10px; font-weight: 900">
+               Internal Projects:
+            </h3>
+        </header>
+    </div>
+    <div style="position: relative;
+	margin-top: 15px;background-color:#F6F3F2; z-index:1000;">
+
+        <div class="container" style="border: 5px solid #FCFAFA; border-radius: 5px">
+            <p style="background-color: rgb(248, 153, 45);z-index:1000; margin:10px ; padding:5px " class="text-center">
+                <ul>
+                    <li>Customer Visit Management</li>
+                    <li>Graphs & Highcharts</li>
+                    <li>Marketo Email Templates</li>
+                </ul>
+            </p>
+            <div class="panel-group" id="accordion" style="margin: 10px ; padding:5px ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                Customer Visit Management
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <ul>
+                                <li>This application is used to keep track of the customer's visiting Infosys DC. It is developed using C#, Asp.Net Webform and Mysql Database. The application involve storing various details about the customer and providing them with facilities like accomodation, Vehicle etc. Design involved implementation of dependent dropdowns for categorizing types of vehicles, providing greetings etc.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                Graphs & Highcharts
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Graphs and Highcharts are used for visual display of data. In Adidas account portal,highcharts were used to display LOB and growths for different Fiscal year and their comparisons as Pie chart , Bar graph chart, Donut chart & Stacked bar graph</li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                Marketo Email Templates
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Marketo Email Templates are a standard for designing content editable emails. The project involved designing various dynamic templates for consultants that can be used to send emails across the organisation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function(){
+
+$('.collapse').collapse({
+                    toggle: false
+            });
+
+
+});
+    </script>
+</body>
+</html>
+
+
